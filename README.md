@@ -2,7 +2,7 @@
 This is a JavaScript gaming engine I am developing.
 
 
-This project may not look like much right now but I plan to keep editing it and improving upon it. I plan to have the engine simplify game development for js/canvas, allow developers to create in both 2d(like platforming games) and 3d-ish(like original zelda games), and be usable for developers both experienced and beginners. 
+This project may not look like much right now but I plan to keep editing it and improving upon it. I plan to have the engine simplify game development for js/canvas, allow developers to create in both 2d(like platforming games) and 3d-ish(like original zelda games), and be usable for developers both experienced and beginners.
 
 Currently the engine simplifies shape creation(Rectangles, Circles, Lines, and Backgrounds), and allows sprite importing. I plan to release updates that allow more shapes, loops, animationd, tilemaps, and more.
 
@@ -12,24 +12,24 @@ Currently the engine simplifies shape creation(Rectangles, Circles, Lines, and B
 
 ```js
 
-//Creating a gameArea / Canvas:
+/* Creating a gameArea / Canvas: */
 Vas.createCanvas(<style>);
 
-//Style must be an object:
+/* Style must be an object: */
 Vas.createCanvas({style:"border: 1px solid #333; box-shadow: 0 0 16px 2px rgba(0,0,0,1);"})
 
-//Initialize the gameArea
+/* Initialize the gameArea */
 Vas.init();
 
-//Creating a GameObject (currently only shapes.rect exists, will add more soon)
-//METHOD: GameObject.shapes.rect( x, y, width, height, OPTIONAL: color);
-// color defaults to black.
+/* Creating a GameObject (currently only shapes.rect exists, will add more soon) */
+/* METHOD: GameObject.shapes.rect( x, y, width, height, OPTIONAL: color); */
+/* color defaults to black. */
 var rect = GameObject.shapes.rect( 100, 100, 100, 150, 'blue');
 
-//You can change the mass of the object as it will currently be affected by gravity. Default = 1
+/* You can change the mass of the object as it will currently be affected by gravity. Default = 1 */
 rect.mass = 0;
 
-//Start the loop
+/* Start the loop */
 Vas._FixedUpdate();
 
 ```

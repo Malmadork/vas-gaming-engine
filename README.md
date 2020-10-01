@@ -12,34 +12,37 @@ Currently the engine simplifies shape creation(Rectangles, Circles, Lines, and B
 
 ```js
 
-/* Creating a gameArea / Canvas: */
+/*
+ * Creating a gameArea / Canvas:
+ */
 Vas.createCanvas(<style>);
 
 
-/* Style must be an object: */
-
+/*
+ * Style must be an object:
+ */
 Vas.createCanvas({style:"border: 1px solid #333; box-shadow: 0 0 16px 2px rgba(0,0,0,1);"})
 
-
-/* Initialize the gameArea */
-
+/*
+ * Initialize the gameArea
+ */
 Vas.init();
 
-
-/* Creating a GameObject (currently only shapes.rect exists, will add more soon) */
-/* METHOD: GameObject.shapes.rect( x, y, width, height, OPTIONAL: color); */
-/* color defaults to black. */
-
+/*
+ * Creating a GameObject (currently only shapes.rect exists, will add more soon)
+ * METHOD: GameObject.shapes.rect( x, y, width, height, OPTIONAL: color);
+ * color defaults to black.
+ */
 var rect = GameObject.shapes.rect( 100, 100, 100, 150, 'blue');
 
-
-/* You can change the mass of the object as it will currently be affected by gravity. Default = 1 */
-
+/*
+ * You can change the mass of the object as it will currently be affected by gravity. Default = 1
+ */
 rect.mass = 0;
 
-
-/* Start the loop */
-
+/*
+ * Starts the game Loop
+ */
 Vas._FixedUpdate();
 
 ```

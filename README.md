@@ -15,11 +15,11 @@ Currently the engine simplifies shape creation(Rectangles, Circles, Lines, and B
 /*
  * Creating a gameArea / Canvas:
  */
-Vas.createCanvas(<style>);
+Vas.createCanvas();
 
 
 /*
- * Style must be an object:
+ * You can supply a style when creating the canvas
  */
 Vas.createCanvas({style:"border: 1px solid #333; box-shadow: 0 0 16px 2px rgba(0,0,0,1);"})
 
